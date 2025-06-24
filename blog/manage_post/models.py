@@ -58,7 +58,6 @@ class Rating(models.Model):
 
 #Perfil
 class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
     profession = models.CharField(max_length=100)
     birthday = models.DateField(null=True)
     about = models.TextField(null=True)
